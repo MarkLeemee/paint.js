@@ -9,17 +9,22 @@
     <title>PaintJS</title>
 </head>
 
+<!-- 자바스크립트는 id, css는 class활용 -->
 <body>
+    <!-- canvas의 속성 및 메서드는 mdn을 통해 검색 -->
     <canvas id="jsCanvas" class="canvas"></canvas>
     <div class="controls">
+        <!-- 레인지 컨트롤바 삽입 (value을 넣어주면 기본값으로 설정됨) -->
         <div class="controls__range">
             <input type="range" id="jsRange" min="0.1" max="5" value="2.5" step="0.1" />
         </div>
+        <!-- 버튼 2개 생성 -->
         <div class="controls__btns">
             <button id="jsMode">NOW : Paint</button>
             <button id="jsSave">Save</button>
         </div>
         <div class="controls__colors" id="jsColors">
+            <!-- 색상은 직접 선언. css에서 여러개 선언 시에 번거롭거나 css코드가 더러워질 수 있다. -->
             <div class="controls__color jsColor" style="background-color:#2c2c2c"></div>
             <div class="controls__color jsColor" style="background-color:white"></div>
             <div class="controls__color jsColor" style="background-color:#FF3B30"></div>
